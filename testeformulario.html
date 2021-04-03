@@ -1,0 +1,61 @@
+<form action="/pagina-processa-dados-do-form" method="post">
+
+    <fieldset>
+
+        <legend>Dados Gerais</legend>
+
+        <label for="nome">Nome:</label>
+        <input type="text" ninlength='3' id="nome" />
+
+        <label for="data_nascimento">Data de Nascimento:</label>
+        <input type="text" id="data_nascimento" />
+
+        <label for="cpf">CPF:</label>
+        <input type="text"maxlength='11' id="cpf" />
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Endereço</legend>
+
+        <label for="tipo_endereco">Tipo:</label>
+
+        <select id="tipo_endereco">
+
+            <option value="">Selecione</option>
+            <option value="rua">Rua</option>
+            <option value="estrada">Estrada</option>
+            <option value="rodovia">Rodovia</option>
+            <option value="outro">Outro</option>
+
+        </select>
+
+        <label for="lagradouro_endereco">Lagradouro</label>
+        <input type="text" id="lagradouro_endereco" />
+
+        <label for="numero_endereco">Nº</label>
+        <input type="text" id="numero_endereco" />
+
+        <label for="complemento_endereco">Complemento</label>
+        <input type="text" id="complemento_endereco" />      
+
+    </fieldset>
+
+    <fieldset>
+
+        <legend>Fale Conosco</legend>
+
+        <label for="msg">Mensagem:</label>
+        <textarea id="msg" cols="30" rows="10"></textarea>
+
+    </fieldset>
+
+    <fieldset>
+
+        <button type="submit">Enviar Mensagem</button>
+        <button type="reset">Limpar Formulário</button>
+
+    </fieldset>
+
+</form>
